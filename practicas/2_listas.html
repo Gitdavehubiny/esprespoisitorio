@@ -3,29 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
+    <title>Toppings para Helados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #42ffef;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu-link:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .topping {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .topping img {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .topping-description {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <p><em>cursiva</em></p>
-    <ol start="1" type="A">
-        <li>Comprar Productos</li>
-        <li>Ver el estado de una compra</li>
-        <li>
-            <ul type="circle">
-                <li>De este mes</li>
-                <li>De otros meses</li>
-            </ul>
-        </li>
-        <li value="10"></li>
-    </ol>
-
-    <dl>
-        <dt>Termino 1 PROGRAMACION</dt>
-        <dd> </dd>
-        <dt>Termino 2 BASE DE DATOS</dt>
-        <dd> </dd>
-        <DT>tERMINO 3 REDES</DT>
-        <DD> </DD>
-    </dl>
+    <header>
+        <h1>SWEET ICE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="menu-link" href="index.html">Inicio</a></li>
+            <li><a class="menu-link" href="sabores.html">Sabores</a></li>
+            <li><a class="menu-link" href="pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Toppings para Helados</h2>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_chocolate.jpg" alt="Chocolate derretido">
+            <div class="topping-description">
+                <h3>Chocolate Derretido</h3>
+                <p>Delicioso chocolate derretido para darle un toque irresistible a tu helado.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_nueces.jpg" alt="Nueces">
+            <div class="topping-description">
+                <h3>Nueces</h3>
+                <p>Las nueces crujientes son un complemento perfecto para tu helado.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_chispas.jpg" alt="Chispas de colores">
+            <div class="topping-description">
+                <h3>Chispas de Colores</h3>
+                <p>Añade un toque de diversión con chispas de colores en tu helado.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_crema.jpg" alt="Crema batida">
+            <div class="topping-description">
+                <h3>Crema Batida</h3>
+                <p>La suavidad de la crema batida completa tu helado de una manera deliciosa.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_caramelo.jpg" alt="Salsa de caramelo">
+            <div class="topping-description">
+                <h3>Salsa de Caramelo</h3>
+                <p>La salsa de caramelo añade un sabor dulce y pegajoso a tu helado favorito.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_nutela.jpg" alt="Nutella">
+            <div class "topping-description">
+                <h3>Nutella</h3>
+                <p>La Nutella es un acompañante perfecto para los amantes del chocolate y avellanas.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_bombom.jpg" alt="Bombón">
+            <div class="topping-description">
+                <h3>Bombón</h3>
+                <p>Trozos de bombón para darle un toque especial a tu helado.</p>
+            </div>
+        </div>
+        <div class="topping">
+            <img src="practicas/IMG/toppings_snikers.jpg" alt="Snickers">
+            <div class="topping-description">
+                <h3>Snickers</h3>
+                <p>Trozos de Snickers para una experiencia de helado crujiente y sabrosa.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

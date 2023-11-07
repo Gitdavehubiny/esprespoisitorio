@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="practicas/IMG/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu helado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2ecc71;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #42ffef;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu-link:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px; /* Incrementando el espacio de padding */
+            margin-bottom: 20px;
+            clear: both;
+        }
+        .menu-image {
+            float: right; 
+            width: 80px;
+            height: auto;
+            margin-left: 10px;
+        }
+        .helado-result {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crea tu helado</h1>
+    </header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a class="menu-link" href="practicas/1_letras.html">Sabores</a></li>
+                <li><a class="menu-link" href="practicas/2_listas.html">Toppings</a></li>
+                <li><a class="menu-link" href="practicas/3_Enlaces.html">Pedidos</a></li>
+                <li><a class="menu-link" href="practicas/4_Tablas.html">Información</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <section id="crear-helado" class="menu-item">
+            <h2>Crea tu helado</h2>
+            <form id="helado-form">
+                <label for="sabor">Selecciona el sabor:</label>
+                <select name="sabor" id="sabor">
+                    <option value="frutilla">Frutilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vainilla">Vainilla</option>
+                    <option value="cookies">Cookies and Cream</option>
+                </select><br>
+
+                <label for="topping">Selecciona el topping:</label>
+                <select name="topping" id="topping">
+                    <option value="chocolate">Chocolate derretido</option>
+                    <option value="nueces">Nueces</option>
+                    <option value="chispas">Chispas de colores</option>
+                    <option value="crema">Crema batida</option>
+                </select><br>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" name="cantidad" id="cantidad" min="1" value="1"><br>
+
+                <input type="submit" value="Crear helado">
+            </form>
+
+            <div class="helado-result">
+                <h3>Tu helado:</h3>
+                <p id="helado-info">Sabor: <span id="sabor-info"></span><br>
+                Topping: <span id="topping-info"></span><br>
+                Cantidad: <span id="cantidad-info"></span></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Agregar un evento al formulario para mostrar el helado
+        document.getElementById("helado-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var sabor = document.getElementById("sabor").value;
+            var topping = document.getElementById("topping").value;
+            var cantidad = document.getElementById("cantidad").value;
+
+            // Actualizar la información del helado
+            document.getElementById("sabor-info").textContent = sabor;
+            document.getElementById("topping-info").textContent = topping;
+            document.getElementById("cantidad-info").textContent = cantidad;
+
+            document.getElementById("helado-info").textContent = sabor + " con " + topping + " (Cantidad: " + cantidad + ")";
+        });
+    </script>
+</body>
+</html>

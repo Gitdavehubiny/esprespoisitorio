@@ -3,42 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos de estilos físicos HTML</title>
+    <title>Página Combinada</title>
+    <style>
+        body {
+            background-image: url('IMG/fondo7.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            text-align: center;
+            color: aqua;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: rgb(0, 133, 124);
+        }
+
+        dt {
+            text-align: center;
+            color: rgb(52, 112, 231);
+        }
+
+        li {
+            text-align: center;
+            color: rgb(131, 210, 228);
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .izquierda {
+            text-align: left;
+            color: #555;
+        }
+
+        .derecha {
+            text-align: right;
+            color: #777;
+        }
+
+        .centro {
+            text-align: center;
+            color: #999;
+        }
+
+        .parrafo {
+            margin: 10px 0;
+        }
+    </style>
 </head>
-<body style="background-image:url();">
-    <!-- Esto es  un ejemplo de texto en negrita y cursiva dentro de un párrafo -->
-    <p><b><i>Aquí tenemos un ejemplo de texto en negrita y cursiva dentro de un párrafo</i></b></p>
-
-    <!-- Aquí estamos trabajando con texto con apariencia de máquina de escribir y subrayado. -->
-    <p><it>Este es un ejemplo de texto con apariencia de máquina de escribir</it></p>
-    <p><u>Este es un ejemplo de texto subrayado</u></p>
-
-    <p>Este es un ejemplo de texto en <sub>superíndice</sub> y <sup>subíndice</sup>.</p>
-    <p>Este es un ejemplo de texto <big>grande</big> y <small>pequeño</small>.</p>
-    <p>Este es un ejemplo de texto <blink>intermitente</blink> y <s>tachado</s>.</p>
-
-    <p><em>cursiva</em></p>
-    <ol start="1" type="A">
-        <li>Comprar Productos</li>
-        <li>Ver el estado de una compra</li>
-        <li>
-            <ul type="circle">
-                <li>De este mes</li>
-                <li>De otros meses</li>
+<body>
+    <header>
+        <h1>SWEET ICE</h1>
+    </header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a class="menu-link" href="practicas/1_letras.html">Sabores</a></li>
+                <li><a class="menu-link" href="practicas/2_listas.html">Toppings</a></li>
+                <li><a class="menu-link" href="practicas/3_Enlaces.html">Pedidos</a></li>
+                <li><a class="menu-link" href="practicas/4_Tablas.html">Información</a></li>
             </ul>
-        </li>
-        <li value="10"></li>
-    </ol>
-
-    <dl>
-        <dt>Termino 1 PROGRAMACION</dt>
-        <dd> </dd>
-        <dt>Termino 2 BASE DE DATOS</dt>
-        <dd> </dd>
-        <DT>tERMINO 3 REDES</DT>
-        <DD> </DD>
-    </dl>
-
-
+        </nav>
+    </div>
+    <div class="container">
+        <section id="sabores" class="menu-item">
+            <h2>Menú de helados</h2>
+            <img class="menu-image" src="practicas/IMG/frappe.jpg" alt="Frappe">
+            <img class="menu-image" src="practicas/IMG/ice_rools.jpg" alt="Ice_Rolls">
+            <img class="menu-image" src="practicas/IMG/taco_bell.jpg" alt="Taco_Bell">
+            <img class="menu-image" src="practicas/IMG/te_helado.jpg" alt="Té_helado">
+            <img class="menu-image" src="practicas/IMG/fruit_ice.jpg" alt="Fruit_Ice">
+            <ul>
+                <li>Frappe</li>
+                <li>Ice Rolls</li>
+                <li>Taco Bell</li>
+                <li>Té helado</li>
+                <li>Fruit Ice</li>
+            </ul>
+        </section>
+        <section id="toppings" class="menu-item">
+            <h2>Toppings</h2>
+            <img class="menu-image1" src="practicas/IMG/toppings_chocolate.jpg" alt="Chocolate derretido">
+            <img class="menu-image1" src="practicas/IMG/toppings_nueces.jpg" alt="Nueces">
+            <img class="menu-image1" src="practicas/IMG/toppings_chispas.jpg" alt="Chispas de colores">
+            <img class="menu-image1" src="practicas/IMG/toppings_crema.jpg" alt="Crema batida">
+            <img class="menu-image1" src="practicas/IMG/toppings_caramelo.jpg" alt="Salsa de caramelo">
+            <img class="menu-image1" src="practicas/IMG/toppings_nutela.jpg" alt="Nutella">
+            <img class="menu-image1" src="practicas/IMG/toppings_bombom.jpg" alt="Bombón">
+            <img class="menu-image1" src="practicas/IMG/toppings_snikers.jpg" alt="Snickers">
+            <ul>
+                <li>Chocolate derretido</li>
+                <li>Nueces</li>
+                <li>Chispas de colores</li>
+                <li>Crema batida</li>
+                <li>Salsa de caramelo</li>
+                <li>Nutella</li>
+                <li>Bombón</li>
+                <li>Snickers</li>
+            </ul>
+        </section>
+        <section id="sabores" class="menu-item">
+            <h2>Sabores</h2>
+            <img class="menu-image2" src="practicas/IMG/sabor_frutilla.jpg" alt="Frutilla">
+            <img class="menu-image2" src="practicas/IMG/sabor_chocolate.jpg" alt="Chocolate">
+            <img class="menu-image2" src="practicas/IMG/sabor_tres_leches.jpg" alt="Tres leches">
+            <ul>
+                <li>Frutilla</li>
+                <li>Chocolate</li>
+                <li>Tres leches</li>
+            </ul>
+        </section>
+        <section id="quienes-somos" class="menu-item">
+            <h2 class="titulo">Quiénes somos</h2>
+            <p class="parrafo izquierda">Somos una heladería comprometida con la calidad y la satisfacción de nuestros clientes. Desde 1990, nos enorgullece servir helados de alta calidad elaborados con ingredientes frescos y deliciosos.</p>
+        </section>
+        <section id="mision" class="menu-item">
+            <h2 class="titulo">Nuestra Misión</h2>
+            <p class="parrafo derecha">Nuestra misión es ofrecer una experiencia única a todos los amantes del helado. Queremos que cada visita a nuestra tienda sea un momento de felicidad y disfrute para nuestros clientes.</p>
+        </section>
+        <section id="vision" class="menu-item">
+            <h2 class="titulo">Nuestra Visión</h2>
+            <p class="parrafo centro">Nuestra visión es convertirnos en la heladería de referencia en la región. Queremos ser reconocidos por nuestros sabores innovadores, nuestro servicio excepcional y nuestro compromiso con la comunidad.</p>
+        </section>
+    </div>
 </body>
 </html>
